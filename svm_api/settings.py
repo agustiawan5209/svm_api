@@ -128,5 +128,5 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = "/home/delapain.my.id/public_html/media/"
 
 # Security settings untuk production
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ["delapain.my.id", "www.delapain.my.id", "148.230.98.18"]
