@@ -129,4 +129,4 @@ MEDIA_ROOT = "/home/delapain.my.id/public_html/media/"
 
 # Security settings untuk production
 DEBUG = True
-ALLOWED_HOSTS = ["delapain.my.id", "www.delapain.my.id", "148.230.98.18"]
+ALLOWED_HOSTS = ["delapain.my.id", "www.delapain.my.id", "148.230.98.18", "https://gizi-ibu.citratekno.com", 'gizi-ibu.citratekno.com', "http://127.0.0.1:8000", '127.0.0.1:8000']
