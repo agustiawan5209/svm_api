@@ -22,11 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-ds9^b*ttx8^0$)u0)5)umz4vr8@mbb56&&xjsyk)1=djlscgk0"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -119,9 +114,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = "static/"
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# Static files configuration
+STATIC_URL = "/static/"
+STATIC_ROOT = "/home/delapain.my.id/public_html/static/"
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "/home/delapain.my.id/public_html/media/"
+
+# Security settings untuk production
+DEBUG = False
+ALLOWED_HOSTS = ["delapain.my.id", "www.delapain.my.id", "148.230.98.18"]
